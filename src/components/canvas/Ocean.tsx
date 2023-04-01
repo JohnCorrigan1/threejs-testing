@@ -1,9 +1,9 @@
 import { useGLTF } from "@react-three/drei";
 
 import { Object3DNode, useFrame } from 'react-three-fiber';
-import { Vector3 } from 'three';
+import { Vector3, Mesh } from 'three';
 
-interface MyObjectProps extends Object3DNode {
+interface MyObjectProps extends Object3DNode<Mesh, typeof Mesh> {
   position: Vector3;
 }
 
